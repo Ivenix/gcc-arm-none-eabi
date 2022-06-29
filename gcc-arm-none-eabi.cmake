@@ -3,7 +3,7 @@ set(CMAKE_SYSTEM_PROCESSOR     ARM)
 
 set(TOOLCHAIN_PREFIX arm-none-eabi-)
 
-get_filename_component(ARM_TOOLCHAIN_DIR ${CMAKE_BINARY_DIR}/sdk/gcc-arm-none-eabi/bin DIRECTORY)
+get_filename_component(ARM_TOOLCHAIN_DIR ${CMAKE_BINARY_DIR}/sdk/gcc-arm-none-eabi/bin ABSOLUTE)
 
 # Configure cross-compiler toolchain
 SET(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
